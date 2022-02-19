@@ -9,7 +9,7 @@ export default defineComponent({
     },
     setup(props){
         return ()=>(
-        <div>
+        <div class="main">
         Hello,World {count.value}
         <h1>{props.msg}</h1>
         </div>
@@ -19,7 +19,10 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
+<style scoped lang="less">
+.main {
+  height: 100%;
+}
 a {
   color: #42b983;
 }
